@@ -34,14 +34,14 @@
 
 <body>
     <div class="w-screen">
-        <div class="w-ful bg-[#9EA29F]">
+        <div class="w-full bg-[#9EA29F]">
             <div class="2xl:container mx-auto">
                 <div class="w-[90%] h-[100dvh] mx-auto flex flex-col">
 
                     <!-- navbar -->
-                    <nav class="w-full flex items-center justify-between py-5 flex-shrink-0">
+                    <nav class="w-full flex items-center justify-between py-5 flex-shrink-0 relative z-30">
                         <div>
-                            <h1 class="text-[30px] md:text-[32px] lg:[62px] font-bebas py-5">Hoodies</h1>
+                            <h1 class="text-[30px] md:text-[32px] lg:text-[62px] font-bebas py-5">Hoodies</h1>
                         </div>
                         <div class="hidden lg:block">
                             <ul class="font-[Roboto] text-[15px] flex gap-10">
@@ -59,15 +59,15 @@
                     </nav>
 
                     <!-- Hero section -->
-                    <main class="flex-1 relative">
+                    <main class="flex-1 relative overflow-hidden">
                         <h1
                             class="absolute top-[72%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[100px] sm:text-[200px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
                             Hoodies
                         </h1>
 
-                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-20">
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
                             <img src="./assets/Main.png" alt="Hoodie"
-                                class="w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] xl:w-[500px] h-auto">
+                                class="w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw] xl:w-[35vw] max-w-[500px] max-h-[calc(100dvh-120px)] h-auto object-contain">
                         </div>
                     </main>
                 </div>
