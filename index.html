@@ -1,0 +1,117 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodies</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ["Inter", "sans-serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                        bebas: ["Bebas Neue", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div class="w-screen">
+        <div class="w-full bg-[9EA29F]">
+            <div class="2xl:container mx-auto">
+                <div class="w-[90%] mx-auto">
+
+                    <!-- navbar -->
+                    <nav class="w-full flex items-center justify-between py-5">
+                        <div>
+                            <h1 class="text-[30px] md:text-[32px] lg:[52px] font-bebas py-5">Hoodies</h1>
+                        </div>
+                        <div class="hidden lg:block">
+                            <ul class="font-[Roboto] text-[15px] flex gap-10">
+                                <li>HOME</li>
+                                <li>ABOUT</li>
+                                <li>PRODUCT</li>
+                                <li>CONTACT</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="font-[Roboto] bg-[#F6F5F5] rounded-3xl opacity-[50%] py-3 px-6 ">ORDER
+                                NOW</button>
+                        </div>
+                    </nav>
+
+                    <!-- Hero section -->
+                    <main>
+                        <h1
+                            class="absolute top-1/5 left-1/2 -translate-x-1/2 font-bebas text-[120px] sm:text-[170px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
+                            Hoodies
+                        </h1>
+
+                        <div
+                            class="relative z-10 flex flex-col lg:flex-row items-center justify-between w-[90%] mx-auto h-auto">
+                            <div class="flex justify-center w-full">
+                                <img src="./assets/Main.png" alt="" class="w-auto max-w-full h-auto mx-auto">
+                            </div>
+                            <div class="hidden absolute bottom-2 font-[Roboto] text-[32px] p-4 rounded-lg max-w-xs">
+                                <div>Premium Hoodies Designed for Comfort Shipped to Your Door</div>
+                            </div>
+                            <div
+                                class="hidden absolute bottom-4 right-4 font-[Roboto] text-xl p-4 rounded-lg max-w-xs z-20 ">
+                                <p>Explore a curated collection of high-quality hoodies made for everyday style and
+                                    comfort. Hassle-free dropshipping — no inventory, no stress, just pure creativity.
+                                </p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="">
+            <div class="min-h-screen">
+                <div class="w-[90%] mx-auto h-full">
+                    <div>
+                        <h1 class="font-bebas text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px]">
+                            MORE THAN JUST HOODIES — WE’RE DEFINING A STYLE, A MOVEMENT, A COMMUNITY
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+                            <h1
+                                class="font-[Italianno] text-[40px] sm:text-[56px] md:text-[72px] lg:text-[80px] leading-[40px] sm:leading-[52px] md:leading-[64px] lg:leading-[72px] text-center max-w-[18ch]">
+                                Built for dreamers,
+                                doers, and <br>
+                                everyday
+                                comfort seekers
+                            </h1>
+                            <img class="w-full max-w-[280px] sm:max-w-[360px] md:max-w-[440px] lg:max-w-[500px] h-auto object-cover"
+                                src="./assets/About.jpg" alt="About">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
