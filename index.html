@@ -2,59 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoodies</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodies</title>
+    <link rel="stylesheet" href="style/styles.css">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Roboto:wght@100..900&family=Italianno&display=swap"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Roboto:wght@100..900&family=Italianno&display=swap"
+        rel="stylesheet">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ["Inter", "sans-serif"],
-            roboto: ["Roboto", "sans-serif"],
-            bebas: ["Bebas Neue", "sans-serif"],
-            italianno: ["Italianno", "cursive"]
-          },
-        },
-      },
-    }
-  </script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ["Inter", "sans-serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                        bebas: ["Bebas Neue", "sans-serif"],
+                        italianno: ["Italianno", "cursive"]
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
-<<<<<<< HEAD
-<body>
+<body class="bg-white text-black font-roboto">
     <div class="w-screen">
+        <!-- Navbar + Hero -->
         <div class="w-full bg-[#9EA29F]">
             <div class="2xl:container mx-auto">
                 <div class="w-[90%] h-[100dvh] mx-auto flex flex-col">
 
                     <!-- navbar -->
-                    <nav class="w-full flex items-center justify-between py-5 flex-shrink-0 relative z-30">
+                    <nav id="navbar" class="w-full flex items-center justify-between py-5 flex-shrink-0 relative z-30">
                         <div>
                             <h1 class="text-[30px] md:text-[32px] lg:text-[62px] font-bebas py-5">Hoodies</h1>
                         </div>
                         <div class="hidden lg:block">
                             <ul class="font-[Roboto] text-[15px] flex gap-10">
-                                <li>HOME</li>
-                                <li>ABOUT</li>
-                                <li>PRODUCT</li>
-                                <li>CONTACT</li>
+                                <li>
+                                    <a href="#home" class="hover:text-white">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="hover:text-white">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#product" class="hover:text-white">PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="hover:text-white">CONTACT</a>
+                                </li>
                             </ul>
+
                         </div>
                         <div>
                             <button
-                                class="font-[Roboto] bg-[#F6F5F5] rounded-3xl opacity-[50%] py-2 px-4 sm:py-3 sm:px-6 ">ORDER
+                                class="font-roboto bg-[#F6F5F5] rounded-3xl opacity-[50%] py-2 px-4 sm:py-3 sm:px-6">ORDER
                                 NOW</button>
                         </div>
                     </nav>
@@ -65,201 +74,170 @@
                             class="absolute top-[72%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[100px] sm:text-[200px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
                             Hoodies
                         </h1>
-
                         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
                             <img src="./assets/Main.png" alt="Hoodie"
-                                class="w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw] xl:w-[35vw] max-w-[500px] max-h-[calc(100dvh-120px)] h-auto object-contain">
+                                class="w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw] xl:w-[35vw] max-w-[500px] max-h-[calc(100dvh-var(--nav-h,120px))] h-auto object-contain">
                         </div>
                     </main>
                 </div>
-=======
-<body class="bg-white text-black font-roboto">
-  <div class="w-screen">
-    <!-- Navbar + Hero -->
-    <div class="w-full bg-[#9EA29F]">
-      <div class="2xl:container mx-auto">
-        <div class="w-[90%] h-[100dvh] mx-auto flex flex-col">
-
-          <!-- navbar -->
-          <nav class="w-full flex items-center justify-between py-5 flex-shrink-0 relative z-30">
-            <div>
-              <h1 class="text-[30px] md:text-[32px] lg:text-[62px] font-bebas py-5">Hoodies</h1>
->>>>>>> 27a939c (Added my code and updates)
             </div>
-            <div class="hidden lg:block">
-              <ul class="font-roboto text-[15px] flex gap-10">
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PRODUCT</li>
-                <li>CONTACT</li>
-              </ul>
-            </div>
-            <div>
-              <button
-                class="font-roboto bg-[#F6F5F5] rounded-3xl opacity-[50%] py-2 px-4 sm:py-3 sm:px-6">ORDER NOW</button>
-            </div>
-          </nav>
-
-          <!-- Hero section -->
-          <main class="flex-1 relative overflow-hidden">
-            <h1
-              class="absolute top-[72%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[100px] sm:text-[200px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
-              Hoodies
-            </h1>
-            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
-              <img src="./assets/Main.png" alt="Hoodie"
-                class="w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[40vw] xl:w-[35vw] max-w-[500px] h-auto object-contain">
-            </div>
-          </main>
         </div>
-      </div>
-    </div>
 
-    <!-- About Us Section -->
-    <div class="">
-      <div class="min-h-screen 2xl:container mx-auto">
-        <div class="w-[90%] mx-auto h-full">
-          <div>
-            <h1 class="font-bebas text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px]">
-              MORE THAN JUST HOODIES — WE’RE DEFINING A STYLE, A MOVEMENT, A COMMUNITY
-            </h1>
-          </div>
-          <div>
-            <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
-              <img class="w-full max-w-[280px] sm:max-w-[360px] md:max-w-[440px] lg:max-w-[500px] h-auto object-cover"
-                src="./assets/About.jpg" alt="About">
-              <h1
-                class="font-italianno text-[40px] sm:text-[56px] md:text-[72px] lg:text-[80px] leading-[40px] sm:leading-[52px] md:leading-[64px] lg:leading-[72px] text-center max-w-[18ch]">
-                Built for dreamers, doers, and <br> everyday comfort seekers
-              </h1>
+        <!-- About Us Section -->
+        <div class="">
+            <div class="min-h-screen 2xl:container mx-auto">
+                <div class="w-[90%] mx-auto h-full">
+                    <div>
+                        <h1 class="font-bebas text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px]">
+                            MORE THAN JUST HOODIES — WE’RE DEFINING A STYLE, A MOVEMENT, A COMMUNITY
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+                            <img class="w-full max-w-[280px] sm:max-w-[360px] md:max-w-[440px] lg:max-w-[500px] h-auto object-cover"
+                                src="./assets/About.jpg" alt="About">
+                            <h1
+                                class="font-italianno text-[40px] sm:text-[56px] md:text-[72px] lg:text-[80px] leading-[40px] sm:leading-[52px] md:leading-[64px] lg:leading-[72px] text-center max-w-[18ch]">
+                                Built for dreamers, doers, and <br> everyday comfort seekers
+                            </h1>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <!-- Bestseller Section -->
+        <section class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto">
+                <h1 class="font-bebas text-[40px] sm:text-[60px] md:text-[80px] lg:text-[100px] text-end">BESTSELLER
+                </h1>
+                <div class="relative">
+                    <div id="carousel"
+                        class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-6 scroll-smooth hide-scrollbar">
+
+                        <!-- Product 1 -->
+                        <div
+                            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-start bg-white rounded-lg shadow-md p-4">
+                            <img src="assets/Hoodie 1.png" alt="Hoodie 1"
+                                class="w-full h-[350px] object-cover rounded-md">
+                            <button
+                                class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
+                                Buy ⟶
+                            </button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div
+                            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
+                            <img src="assets/Hoodie 2.png" alt="Hoodie 2"
+                                class="w-full h-[350px] object-cover rounded-md">
+                            <button
+                                class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
+                                Buy ⟶
+                            </button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div
+                            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
+                            <img src="assets/Hoodie 3.png" alt="Hoodie 3"
+                                class="w-full h-[350px] object-cover rounded-md">
+                            <button
+                                class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
+                                Buy ⟶
+                            </button>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div
+                            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
+                            <img src="assets/Hoodie 4.png" alt="Hoodie 4"
+                                class="w-full h-[350px] object-cover rounded-md">
+                            <button
+                                class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
+                                Buy ⟶
+                            </button>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div
+                            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
+                            <img src="assets/Hoodie 5.png" alt="Hoodie 5"
+                                class="w-full h-[350px] object-cover rounded-md">
+                            <button
+                                class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
+                                Buy ⟶
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+
+        <!-- Footer -->
+        <footer class="bg-[#9EA29F] w-full mx-auto mt-16">
+            <div class="2xl:container mx-auto">
+                <div class="w-[90%] mx-auto py-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-black">
+                    <!-- Left -->
+                    <div class="mt-0">
+                        <h3 class="font-bebas text-6xl flex items-start justify-start">
+                            HOODIES <span class="text-xl self-start m-1">©</span>
+                        </h3>
+                        <p class="mt-2 font-roboto uppercase">Never worry about a parcel delivery again.</p>
+                    </div>
+
+                    <!-- Middle -->
+                    <div>
+                        <h3 class="font-bebas text-6xl">Discover</h3>
+                        <ul class="space-y-2 mt-3 font-roboto">
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">PRODUCTS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">HOME</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right -->
+                    <div>
+                        <h3 class="font-bebas text-6xl">Subscribe to our newsletter</h3>
+                        <p class="mt-2 font-roboto text-sm">
+                            Want to stay up to date with news and updates about our product? Subscribe.
+                        </p>
+                        <div class="mt-4 flex items-center bg-[#F6F5F5] rounded-3xl px-4 py-2 shadow-md">
+                            <input type="email" placeholder="example@gmail.com"
+                                class="flex-1 outline-none text-sm text-gray-700 bg-transparent font-roboto placeholder:text-gray-400">
+                            <button
+                                class="ml-2 text-lg font-bold w-9 h-9 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-colors">⟶</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="w-full">
+                <div
+                    class="w-[90%] mx-auto flex flex-col md:flex-row items-center justify-between py-4 bg-[#9EA29F] text-sm text-black border-t border-black/10">
+                    <button
+                        class="font-roboto bg-[#F6F5F5] rounded-3xl py-2 px-4 sm:py-3 sm:px-6 hover:bg-black hover:text-white transition-colors">English</button>
+                    <div class="flex gap-6 py-2 px-4 text-[12px] md:text-[14px] text-center font-roboto">
+                        <a class="hover:underline hover:text-white underline-offset-4 transition-colors" href="#">Terms
+                            of use</a>
+                        <a class="hover:underline hover:text-white underline-offset-4 transition-colors"
+                            href="#">Privacy</a>
+                        <a class="hover:underline hover:text-white underline-offset-4 transition-colors"
+                            href="#">Shipping</a>
+                        <a class="hover:underline hover:text-white underline-offset-4 transition-colors"
+                            href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
     </div>
-
-    <!-- Bestseller Section -->
-    <section class="max-w-7xl mx-auto px-6 py-16">
-      <h1 class="font-bebas text-4xl text-center mb-12">BESTSELLER</h1>
-
-      
-      <div class="relative">
-        <div id="carousel"
-          class="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-6 scroll-smooth hide-scrollbar">
-
-          <!-- Product 1 -->
-          <div
-            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
-            <img src="assets/Hoodie 1.png" alt="Hoodie 1"
-              class="w-full h-[350px] object-cover rounded-md">
-            <button
-              class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
-              Buy ⟶
-            </button>
-          </div>
-
-          <!-- Product 2 -->
-          <div
-            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
-            <img src="assets/Hoodie 2.png" alt="Hoodie 2"
-              class="w-full h-[350px] object-cover rounded-md">
-            <button
-              class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
-              Buy ⟶
-            </button>
-          </div>
-
-          <!-- Product 3 -->
-          <div
-            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
-            <img src="assets/Hoodie 3.png" alt="Hoodie 3"
-              class="w-full h-[350px] object-cover rounded-md">
-            <button
-              class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
-              Buy ⟶
-            </button>
-          </div>
-
-          <!-- Product 4 -->
-          <div
-            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
-            <img src="assets/Hoodie 4.png" alt="Hoodie 4"
-              class="w-full h-[350px] object-cover rounded-md">
-            <button
-              class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
-              Buy ⟶
-            </button>
-          </div>
-
-          <!-- Product 5 -->
-          <div
-            class="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px] snap-center flex flex-col items-center bg-white rounded-lg shadow-md p-4">
-            <img src="assets/Hoodie 5.png" alt="Hoodie 5"
-              class="w-full h-[350px] object-cover rounded-md">
-            <button
-              class="mt-4 text-sm font-semibold text-black hover:text-white hover:bg-black px-5 py-2 rounded-full transition">
-              Buy ⟶
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-
-
-    <!-- Footer -->
-<footer class="bg-[#9EA29F] mt-16">
-  <div class="max-w-1xl mx-auto px-14 py-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-sm text-black">
-    <!-- Left -->
-    <div>
-      <h3 class="font-bebas text-2xl tracking-wide">HOODIES ©</h3>
-      <p class="mt-2 font-roboto">Never worry about a parcel delivery again.</p>
-    </div>
-
-    <!-- Middle -->
-    <div>
-      <h3 class="font-semibold font-roboto">Discover</h3>
-      <ul class="space-y-2 mt-3 font-roboto">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PRODUCTS</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">HOME</a></li>
-      </ul>
-    </div>
-
-    <!-- Right -->
-    <div>
-      <h3 class="font-semibold font-roboto">Subscribe to our newsletter.</h3>
-      <p class="mt-2 font-roboto text-sm">
-        Want to stay up to date with news and updates about our product? Subscribe.
-      </p>
-      <div class="mt-4 flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-        <input type="email" placeholder="example@gmail.com"
-          class="flex-1 outline-none text-sm text-gray-700 bg-transparent font-roboto">
-        <button class="ml-2 text-lg font-bold">⟶</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="flex flex-col md:flex-row items-center justify-between px-10 py-4 bg-[#8C8F8D] text-sm text-black">
-    <button class="bg-gray-200 rounded-full px-4 py-1 mb-2 md:mb-0 font-roboto">English</button>
-    <div class="flex gap-6 font-roboto">
-      <a href="#">Terms of use</a>
-      <a href="#">Privacy</a>
-      <a href="#">Shipping</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
-</footer>
-
-    
-  
-
-  <!-- Hide scrollbar -->
-  
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
