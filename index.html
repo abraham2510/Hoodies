@@ -36,10 +36,10 @@
     <div class="w-screen">
         <div class="w-ful bg-[#9EA29F]">
             <div class="2xl:container mx-auto">
-                <div class="w-[90%] mx-auto">
+                <div class="w-[90%] h-[100dvh] mx-auto flex flex-col">
 
                     <!-- navbar -->
-                    <nav class="w-full flex items-center justify-between py-5">
+                    <nav class="w-full flex items-center justify-between py-5 flex-shrink-0">
                         <div>
                             <h1 class="text-[30px] md:text-[32px] lg:[62px] font-bebas py-5">Hoodies</h1>
                         </div>
@@ -59,26 +59,15 @@
                     </nav>
 
                     <!-- Hero section -->
-                    <main>
+                    <main class="flex-1 relative">
                         <h1
-                            class="absolute top-1/5 left-1/2 -translate-x-1/2 font-bebas text-[120px] sm:text-[170px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
+                            class="absolute top-[72%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bebas text-[100px] sm:text-[200px] md:text-[250px] lg:text-[400px] xl:text-[450px] z-0">
                             Hoodies
                         </h1>
 
-                        <div
-                            class="relative z-10 flex flex-col lg:flex-row items-center justify-between w-[90%] mx-auto h-auto">
-                            <div class="flex justify-center w-full">
-                                <img src="./assets/Main.png" alt="" class="w-auto max-w-full h-auto mx-auto">
-                            </div>
-                            <div class="hidden absolute bottom-2 font-[Roboto] text-[32px] p-4 rounded-lg max-w-xs">
-                                <div>Premium Hoodies Designed for Comfort Shipped to Your Door</div>
-                            </div>
-                            <div
-                                class="hidden absolute bottom-4 right-4 font-[Roboto] text-xl p-4 rounded-lg max-w-xs z-20 ">
-                                <p>Explore a curated collection of high-quality hoodies made for everyday style and
-                                    comfort. Hassle-free dropshipping — no inventory, no stress, just pure creativity.
-                                </p>
-                            </div>
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-20">
+                            <img src="./assets/Main.png" alt="Hoodie"
+                                class="w-[350px] sm:w-[400px] md:w-[450px] lg:w-[500px] xl:w-[500px] h-auto">
                         </div>
                     </main>
                 </div>
