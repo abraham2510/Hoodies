@@ -1,9 +1,79 @@
  /* Hide scrollbar */
-.hide-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
+ .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-    .hide-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ham{
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:transform 400ms;
+  user-select:none;
+}
+.hamRotate.active{
+  transform:rotate(45deg);
+}
+.line{
+  fill:none;
+  transition:stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:black;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+/* ham1 animation */
+.ham1 .top { stroke-dasharray: 40 139; }
+.ham1 .bottom { stroke-dasharray: 40 180; }
+.ham1.active .top { stroke-dashoffset: -98px; }
+.ham1.active .bottom { stroke-dashoffset: -138px; }
+
+/* Hamburger animation lines */
+.line {
+fill: none;
+transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+stroke: #000;
+stroke-width: 5.5;
+stroke-linecap: round;
+}
+.ham1 .top { stroke-dasharray: 40 139; }
+.ham1 .bottom { stroke-dasharray: 40 180; }
+.ham1.active .top { stroke-dashoffset: -98px; }
+.ham1.active .bottom { stroke-dashoffset: -138px; }
+
+/* Enhanced mobile menu styling */
+#mobileMenu {
+  transition: all 0.4s ease-in-out;
+  backdrop-filter: blur(10px);
+  background-color: rgba(158, 162, 159, 0.95);
+}
+
+#mobileMenu a {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#mobileMenu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Close button styling */
+#mobileMenu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#mobileMenu button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
