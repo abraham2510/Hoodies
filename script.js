@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const hoodieImg = document.querySelector("section img");
 
-
     // Timeline for just the image
     gsap.fromTo(hoodieImg,
         { scale: 0.7, opacity: 0, y: 100 },
@@ -62,25 +61,53 @@ const hoodieImg = document.querySelector("section img");
         }
     );
 
-    gsap.from(".about-img", {
-        x: -150,
-        opacity: 0,
-        duration: 1.4,                // slightly longer entrance
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: ".about-img",
-            start: "top 85%",
-            toggleActions: "play none none none",
-            onEnter: () => {
-                // Smooth boomerang overshoot + spin
-                gsap.to(".about-img", {
-                    x: 60,                  // overshoot right
-                    rotateY: 20,            // slight 3D twist
-                    duration: 0.9,          // smoother timing
-                    ease: "sine.inOut",     // softer easing
-                    yoyo: true,
-                    repeat: 1
-                });
-            }
-        }
+    gsap.fromTo(".about-img",
+  {
+    x: -150,    // start further left
+    opacity: 0  // invisible
+  },
+  {
+    x: 0,       // slide to its natural place
+    opacity: 1, // fade in
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-img",
+      start: "top 80%",   // when image enters
+      end: "top 45%",     // end point of animation
+      scrub: true,        // tie animation to scroll
+      markers: false      // set true if you want to debug
+    }
+  }
+);
+
+
+
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined' && typeof SplitType !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const splitTypes = document.querySelectorAll('.split-text');
+
+  splitTypes.forEach((element) => {
+    const text = new SplitType(element, { types: 'chars' });
+
+    gsap.from(text.chars, {
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%',
+        end: 'top 20%',
+        scrub: true,
+        markers: false,
+      },
+      opacity: 0,
+      y: 50,
+      stagger: 0.1,
+      duration: 1,
+      ease: 'power2.out',
     });
+  });
+} else {
+  console.warn('GSAP/ScrollTrigger/SplitType not loaded; skipping animations');
+}
+
+gsap.registerPlugin(SplitText);
+
